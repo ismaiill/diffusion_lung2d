@@ -40,7 +40,7 @@ Use the following command to specify the location where checkpoints will be save
 export OPENAI_LOGDIR=".../diffusion_lung_2d/models"
 ```
 
-Sampling
+## Sampling
 
 To generate samples, run the command:
 ```bash
