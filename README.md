@@ -27,8 +27,10 @@ To run training, follow these steps:
 
 To start training, run the command:
 
+   ```bash
 
 python image_train.py --data_dir PATH_TO_DATASET $MODEL_FLAGS $DIFFUSION_FLAGS $TRAIN_FLAGS
+   ```
 
 
 To specify the location where checkpoints will be saved:
