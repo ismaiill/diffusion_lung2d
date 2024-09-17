@@ -6,7 +6,7 @@ mkdir -p datasets/lung_8_256/
 python process_data_to_1chanelPNG.py
 ```
 
-Model Training
+##Model Training
 
 To run training:
 
