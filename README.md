@@ -8,11 +8,13 @@ python process_data_to_1chanelPNG.py
 
 Model Training
 
-To run training:
+##To run training:
 
 Set MODEL_FLAGS. For instance:
 
+```bash
 export MODEL_FLAGS="--image_size 256 --num_channels 64 --num_res_blocks 1 --attention_resolutions 1"
+```
 
 Set DIFFUSION_FLAGS. For instance:
 
