@@ -27,12 +27,25 @@ To run training, follow these steps:
 
 To start training, run the command:
 
-   ```bash
-
+bash
 python image_train.py --data_dir PATH_TO_DATASET $MODEL_FLAGS $DIFFUSION_FLAGS $TRAIN_FLAGS
-   ```
-
 
 To specify the location where checkpoints will be saved:
 
+bash
 export OPENAI_LOGDIR=".../diffusion_lung_2d/models"
+
+
+
+## Sampling
+
+To sample, run the command:
+
+bash
+python image_sample.py --model_path .../diffusion_lung_2d/models/model010000.pt $MODEL_FLAGS $DIFFUSION_FLAGS --num_samples NUMBER_OF_SAMPLES
+
+
+To specify the location where samples will be saved:
+
+bash
+export OPENAI_LOGDIR=".../diffusion_lung_2d/results"
