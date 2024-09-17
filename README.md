@@ -8,7 +8,7 @@ python process_data_to_1chanelPNG.py
 
 Model Training
 
-##To run training:
+To run training:
 
 Set MODEL_FLAGS. For instance:
 
@@ -19,23 +19,33 @@ export MODEL_FLAGS="--image_size 256 --num_channels 64 --num_res_blocks 1 --atte
 Set DIFFUSION_FLAGS. For instance:
 
 Set TRAIN_FLAGS. For instance:
+```bash
 
 export TRAIN_FLAGS="--lr 2e-5 --batch_size 128"
+```
 
 To start training, run the command:
+```bash
 
 python image_train.py --data_dir PATH_TO_DATASET $MODEL_FLAGS $DIFFUSION_FLAGS $TRAIN_FLAGS
+```
 
 Use the following command to specify the location where checkpoints will be saved:
+```bash
 
 export OPENAI_LOGDIR=".../diffusion_lung_2d/models"
+```
 
 Sampling
 
 To generate samples, run the command:
+```bash
 
 python image_sample.py --model_path .../diffusion_lung_2d/models/model010000.pt $MODEL_FLAGS $DIFFUSION_FLAGS --num_samples NUMBER_OF_SAMPLES
+```
 
 Use the following command to specify the location where samples will be saved:
+```bash
 
 export OPENAI_LOGDIR=".../diffusion_lung_2d/results"
+```
