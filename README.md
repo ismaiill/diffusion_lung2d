@@ -17,6 +17,10 @@ export MODEL_FLAGS="--image_size 256 --num_channels 64 --num_res_blocks 1 --atte
 ```
 
 Set DIFFUSION_FLAGS. For instance:
+```bash
+export DIFFUSION_FLAGS="--diffusion_steps 7000 --noise_schedule linear --rescale_learned_sigmas False --rescale_timesteps False"
+```
+
 
 Set TRAIN_FLAGS. For instance:
 ```bash
