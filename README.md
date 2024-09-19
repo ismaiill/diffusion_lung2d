@@ -3,13 +3,10 @@
 ## Authors
 
 - **Ismail Abouamal**  
-  Caltech  
-  [abouamal@caltech.edu](mailto:abouamal@caltech.edu)
-
+  Caltech
+  
 - **Shi-Ning Sun**  
   Caltech  
-  [ssun3@caltech.edu](mailto:ssun3@caltech.edu)
-
 ## Abstract
 
 We present an approach to reconstruct 2D images of lung organs from ultrasound scans using a diffusion model. As a first step, we start by training an unconditional model to generate 2D lung images from complete noise. Subsequently, we extend this methodology to develop a conditional model, utilizing ultrasound scans as measurements to guide the denoising process that generates 2D lung images.
@@ -89,6 +86,8 @@ In Fig. 1, we plot the distribution of all the minimum \( L_2 \) distances in ea
 There are some incomplete aspects of our study. We attempted using the Fréchet Inception Distance (FID) to evaluate the degree of similarity of the training set and the generated set. However, the FID we obtained are exponentially larger than what we would expect, indicating numerical issues in its computation. 
 
 The original purpose of this study is to use RF data as guidance in the denoising process. Although we were not able to pursue this direction, it remains a topic of interest for further investigation.
+
+## Code 
 
 Run the script `process_data_to_1chanelPNG.py` to convert the images from the dataset into `.png` images (grayscale). You need to create a directory called `datasets/lung_8_256/` beforehand:
 
