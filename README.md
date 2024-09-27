@@ -13,7 +13,6 @@ We present an approach to reconstruct 2D images of lung organs from ultrasound s
 
 ## Introduction
 
-### Background
 
 Ultrasound imaging, also known as sonography, is an important technique used in diverse medical fields. It operates by emitting high-frequency sound waves into the body or surrounding environment, capturing their echoes as they bounce off obstacles and internal structures. These echoes are then processed by sensors to construct detailed images of the surrounding anatomy, including organs, blood vessels, and developing fetuses. In obstetrics, for example, ultrasound serves as a pivotal tool for assessing fetal health, monitoring development, and detecting potential abnormalities. Similarly, in cardiology, it offers a non-invasive means to evaluate the heart's structure and function with remarkable precision, sparing patients the invasiveness of surgical procedures.
 
