@@ -34,32 +34,6 @@ Our research proposes a potential solution to this problem. We aim to develop an
 
 Our project will consist of two steps. We will first train an unconditional diffusion model using our 2D lung images as the training data. Once we obtain this model and are able to generate new 2D lung images with this model, we will train a conditional model using the ultrasound measurements as guidance of the reverse diffusion process.
 
-## Background
-
-Diffusion models are a family of generative AI models inspired by non-equilibrium thermodynamics. Roughly speaking, the underlying structure consists of a Markov chain of diffusion steps where each step adds random noise to the data. 
-
-Consider a data point \( \mathbf{x_0} \) sampled from an unknown distribution \( q(\mathbf{x}) \) and define the forward diffusion process as follows. Let \( T \in \mathbb{N} \) and \( \beta_1, \dots, \beta_T \) such that \( \beta_{t} \in (0,1) \) for \( 0 < t \leq N \) and the consider forward process defined by:
-
-\[
-\mathbf{x}_t = \sqrt{1 - \beta_t} \mathbf{x}_{t-1} + \sqrt{\beta_t} \mathbf{\epsilon}_t, \quad \mathbf{\epsilon}_t \sim \mathcal{N}(\mathbf{0}, \mathbf{I}).
-\]
-
-We can check that 
-\[
-q(\bfx_t|\bfx_{t-1})= \gaussian(\sqrt{1 -\beta_t} \mathbf{x}_{t-1}, \beta_t).
-\]
-
-Using certain manipulations, we can find that 
-
-\[
-q(\bfx_{t-1} \mid \bfx_{t}, \bfx_{0})  \sim \mathcal{N}(\tilde{\mu}(\bfx_t, \bfx_0), \tilde{\beta}_t\mathbf{1} )
-\]
-
-with 
-
-\[
-\tilde{\beta}_t = \frac{1 - \bar{\alpha}_{t-1}}{1-\bar{\alpha}_t} \bf\beta_t.
-\]
 
 ## Experiments
 
